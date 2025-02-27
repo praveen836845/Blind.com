@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"9uhc9e0bj9h8i","package_name":"madara_example","contract_name":"BlindPlatform","module_path":"madara_example::blind::BlindPlatform","artifacts":{"sierra":"madara_example_BlindPlatform.contract_class.json","casm":null}}]}
