@@ -1,10 +1,10 @@
 import { RpcProvider, Contract } from 'starknet';
 
 // Replace with your contract address
-const CONTRACT_ADDRESS = '0x06a863dc29bc031a5e33559f97570f4c99bdc9c869b6888751ae3d8accb6d24a';
+const CONTRACT_ADDRESS = '0x031c78699275daf5cb177d4075dede94e0d2ea402661a01206999425cc50af52';
 
 // Connect to Madara Devnet
-const provider = new RpcProvider({ nodeUrl: 'http://localhost:9944' });
+const provider = new RpcProvider();
 
 // Fetch the contract ABI dynamically
 export const fetchContractABI = async () => {
@@ -40,7 +40,7 @@ export const fetchPosts = async (contract) => {
       };
   
       let posts = [];
-      for (let postId = 12; postId <= 15; postId++) {
+      for (let postId = 0; postId <= 15; postId++) {
         const post = await contract.get_post(postId, {
           parseRequest: true,
           parseResponse: true,
