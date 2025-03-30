@@ -28,7 +28,7 @@ export const initializeContract = async () => {
 };
 
 // Fetch a post by ID with parseResponse & formatResponse
-export const fetchPosts = async (contract) => {
+export const fetchPosts = async (contract:any ) => {
     try {
       const formatResponse = {
         author: 'string',
